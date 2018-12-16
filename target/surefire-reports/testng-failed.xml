@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="1" name="Failed suite [Tests]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test1(failed)" verbose="0">
+    <parameter name="path" value="/"/>
+    <classes>
+      <class name="sutsko_projects.tests.LoginTest">
+        <methods>
+          <include name="testUntitledTestCase"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- sutsko_projects.tests.LoginTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Tests] -->

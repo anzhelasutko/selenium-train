@@ -3,6 +3,7 @@ package sutsko_projects.webdriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -160,7 +161,7 @@ public class WebDriverFactory {
 						255);
 			}
 
-			webDriver = new FirefoxDriver(ffProfile);
+			webDriver = new FirefoxDriver((Capabilities) ffProfile);
 
 		} else if (INTERNET_EXPLORER.equals(browser)) {
             isSupportedPlatform(browser);
