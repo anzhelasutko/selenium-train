@@ -35,6 +35,8 @@ public class LoginTest {
         passwordField.clear();
         passwordField.sendKeys("19072011");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        assertTrue(driver.findElement(By.xpath("//*[@href='/anzhelasutko/']")).isDisplayed());
     }
 
     @AfterClass(alwaysRun = true)
