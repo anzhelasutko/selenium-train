@@ -112,7 +112,7 @@
 				<user.username></user.username>
 				<user.password></user.password>
 				<grid2.hub></grid2.hub>
-				<site.url>https://www.pinterest.com/</site.url>
+				<site.url>https://github.com/</site.url>
 				<browser.name>firefox</browser.name>
 				<browser.version></browser.version>
 				<browser.platform></browser.platform>
@@ -128,7 +128,7 @@
 				<user.username></user.username>
 				<user.password></user.password>
 				<grid2.hub></grid2.hub>
-				<site.url>https://www.pinterest.com/</site.url>
+				<site.url>https://github.com/</site.url>
 				<browser.name>chrome</browser.name>
 				<browser.version></browser.version>
 				<browser.platform></browser.platform>
@@ -141,7 +141,7 @@
 				<user.username></user.username>
 				<user.password></user.password>
 				<grid2.hub></grid2.hub>
-				<site.url>https://www.pinterest.com/</site.url>
+				<site.url>https://github.com/</site.url>
 				<browser.name>ie</browser.name>
 				<browser.version></browser.version>
 				<browser.platform></browser.platform>

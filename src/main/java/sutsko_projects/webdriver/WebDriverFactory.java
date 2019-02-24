@@ -153,15 +153,17 @@ public class WebDriverFactory {
 			webDriver = new ChromeDriver();
 		} else if (FIREFOX.equals(browser)) {
 
-			FirefoxProfile ffProfile = new FirefoxProfile();
+			webDriver = new FirefoxDriver();
 
-			// Authenication Hack for Firefox
-			if (username != null && password != null) {
-				ffProfile.setPreference("network.http.phishy-userpass-length",
-						255);
-			}
-
-			webDriver = new FirefoxDriver((Capabilities) ffProfile);
+//			FirefoxProfile ffProfile = new FirefoxProfile();
+//
+//			// Authenication Hack for Firefox
+//			if (username != null && password != null) {
+//				ffProfile.setPreference("network.http.phishy-userpass-length",
+//						255);
+//			}
+//
+//			webDriver = new FirefoxDriver((Capabilities) ffProfile);
 
 		} else if (INTERNET_EXPLORER.equals(browser)) {
             isSupportedPlatform(browser);

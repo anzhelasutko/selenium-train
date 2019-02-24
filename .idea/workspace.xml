@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="684e90fb-2e49-40d0-828c-34adce7c095a" name="Default Changelist" comment="Added assertion">
+    <list default="true" id="684e90fb-2e49-40d0-828c-34adce7c095a" name="Default Changelist" comment="Fixed browser profiles, started adding of helpers">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sutsko_projects/applogic/ApplicationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sutsko_projects/applogic/DriverBasedHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sutsko_projects/webdriver/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sutsko_projects/webdriver/WebDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sutsko_projects/pages/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sutsko_projects/pages/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sutsko_projects/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sutsko_projects/tests/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sutsko_projects/webdriver/WebDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sutsko_projects/webdriver/WebDriverFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/Tests/Test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Tests/Test1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/Tests/Test1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Tests/Test1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Tests/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Tests/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sutsko_projects.tests.LoginTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sutsko_projects.tests.LoginTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Tests/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Tests/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Tests/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Tests/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Tests/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Tests/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sutsko_projects/pages/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sutsko_projects/pages/TestBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/sutsko_projects/tests/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sutsko_projects/tests/LoginTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,47 +38,50 @@
     <session id="1225329672">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.100" value="1" />
+          <entry key="project.open.time.103" value="1" />
           <entry key="project.open.time.114" value="1" />
           <entry key="project.open.time.143" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.87" value="1" />
           <entry key="project.open.time.91" value="2" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="13" />
-          <entry key="properties" value="2" />
-          <entry key="xml" value="4" />
+          <entry key="class" value="4" />
+          <entry key="java" value="26" />
+          <entry key="properties" value="3" />
+          <entry key="xml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="13" />
-          <entry key="Properties" value="2" />
-          <entry key="XML" value="4" />
+          <entry key="CLASS" value="4" />
+          <entry key="JAVA" value="26" />
+          <entry key="Properties" value="3" />
+          <entry key="XML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="282" />
-          <entry key="properties" value="40" />
-          <entry key="txt" value="22" />
+          <entry key="java" value="456" />
+          <entry key="properties" value="120" />
+          <entry key="txt" value="73" />
           <entry key="xml" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="282" />
-          <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Properties" value="40" />
+          <entry key="JAVA" value="456" />
+          <entry key="PLAIN_TEXT" value="73" />
+          <entry key="Properties" value="120" />
           <entry key="XML" value="46" />
         </counts>
       </usages-collector>
@@ -81,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/sutsko_projects/tests/LoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+            <state relative-caret-position="321">
+              <caret line="23" column="68" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,55 +102,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sutsko_projects/applogic/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            <state relative-caret-position="102">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2227">
-              <caret line="131" column="29" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sutsko_projects/applogic/DriverBasedHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sutsko_projects/webdriver/WebDriverFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2669">
-              <caret line="175" selection-start-line="175" selection-end-line="175" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/sutsko_projects/pages/TestBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/sutsko_projects/pages/HomePageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+              <caret line="9" column="35" lean-forward="true" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -166,15 +141,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/sutsko_projects/pages/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sutsko_projects/webdriver/WebDriverFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/sutsko_projects/tests/Gecko.java" />
         <option value="$PROJECT_DIR$/src/test/java/sutsko_projects/tests/LoginDropbox.java" />
         <option value="$PROJECT_DIR$/src/test/java/sutsko_projects/tests/LoginDrop.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/sutsko_projects/tests/LoginFF.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/sutsko_projects/pages/HomePageTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sutsko_projects/webdriver/WebDriverFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sutsko_projects/pages/TestBase.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/sutsko_projects/applogic/UserHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sutsko_projects/applogic/DriverBasedHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sutsko_projects/applogic/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/sutsko_projects/tests/LoginTest.java" />
       </list>
     </option>
@@ -183,11 +162,6 @@
     <option name="enabledProfiles">
       <list>
         <option value="chrome" />
-      </list>
-    </option>
-    <option name="disabledProfiles">
-      <list>
-        <option value="firefox" />
       </list>
     </option>
   </component>
@@ -226,8 +200,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,6 +232,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sutsko_projects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sutsko_project_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="selenium-train" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sutsko_projects" type="462c0819:PsiDirectoryNode" />
+              <item name="applogic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sutsko_project_1" type="b2602c69:ProjectViewProjectNode" />
@@ -301,7 +282,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="chrome" type="462c0819:PsiDirectoryNode" />
+              <item name="drivers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sutsko_project_1" type="b2602c69:ProjectViewProjectNode" />
@@ -353,10 +334,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547208384680" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551018521279" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/sutsko_projects" />
     <property name="last_opened_file_path" value="D:/Auto/Git/bin/git.exe" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -374,7 +357,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.testUntitledTestCase">
+  <component name="RunManager" selected="TestNG.LoginTest">
     <configuration name="HomePageTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sutsko_project_1" />
       <extension name="coverage">
@@ -468,8 +451,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest.testUntitledTestCase" />
         <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.LoginTest.testUntitledTestCase" />
         <item itemvalue="TestNG.HomePageTest.testH1Existing" />
         <item itemvalue="TestNG.HomePageTest" />
         <item itemvalue="TestNG.LoginDrop" />
@@ -490,38 +473,46 @@
       <option name="presentableId" value="Default" />
       <updated>1544343065162</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added assertion">
+      <created>1547208516275</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1547208516275</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginTest_testUntitledTestCase - 2019.01.11 at 11h 43m 35s.xml">
-      <configuration name="LoginTest.testUntitledTestCase" configurationId="TestNG" />
+    <history-entry file="LoginTest - 2019.02.24 at 09h 43m 25s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest_testUntitledTestCase - 2019.01.11 at 11h 47m 11s.xml">
-      <configuration name="LoginTest.testUntitledTestCase" configurationId="TestNG" />
+    <history-entry file="LoginTest - 2019.02.24 at 09h 50m 56s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest_testUntitledTestCase - 2019.01.11 at 12h 14m 59s.xml">
-      <configuration name="LoginTest.testUntitledTestCase" configurationId="TestNG" />
+    <history-entry file="LoginTest - 2019.02.24 at 09h 51m 42s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest_testUntitledTestCase - 2019.01.11 at 12h 37m 16s.xml">
-      <configuration name="LoginTest.testUntitledTestCase" configurationId="TestNG" />
+    <history-entry file="LoginTest - 2019.02.24 at 14h 46m 40s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest_testUntitledTestCase - 2019.01.11 at 12h 39m 02s.xml">
-      <configuration name="LoginTest.testUntitledTestCase" configurationId="TestNG" />
+    <history-entry file="LoginTest - 2019.02.24 at 14h 47m 51s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest_testUntitledTestCase - 2019.01.11 at 12h 43m 26s.xml">
-      <configuration name="LoginTest.testUntitledTestCase" configurationId="TestNG" />
+    <history-entry file="LoginTest - 2019.02.24 at 14h 50m 22s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest_testUntitledTestCase - 2019.01.11 at 12h 52m 00s.xml">
-      <configuration name="LoginTest.testUntitledTestCase" configurationId="TestNG" />
+    <history-entry file="LoginTest - 2019.02.24 at 14h 51m 03s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest_testUntitledTestCase - 2019.01.11 at 12h 53m 16s.xml">
-      <configuration name="LoginTest.testUntitledTestCase" configurationId="TestNG" />
+    <history-entry file="LoginTest - 2019.02.24 at 15h 08m 20s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest_testUntitledTestCase - 2019.01.11 at 13h 03m 14s.xml">
-      <configuration name="LoginTest.testUntitledTestCase" configurationId="TestNG" />
+    <history-entry file="LoginTest - 2019.02.24 at 15h 14m 41s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest_testUntitledTestCase - 2019.01.11 at 13h 04m 08s.xml">
-      <configuration name="LoginTest.testUntitledTestCase" configurationId="TestNG" />
+    <history-entry file="LoginTest - 2019.02.24 at 15h 27m 42s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -536,7 +527,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.27827764" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.28984576" />
       <window_info id="Structure" order="1" sideWeight="0.502008" side_tool="true" weight="0.26156813" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -552,8 +543,8 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32974428" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.2987887" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32974428" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32974428" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32974428" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24939856" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -569,7 +560,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added assertion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added assertion" />
+    <MESSAGE value="Fixed browser profiles, started adding of helpers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed browser profiles, started adding of helpers" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -586,13 +578,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/sutsko_projects/tests/Gecko.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/sutsko_projects/webdriver/AuthenticatedHtmlUnitDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sutsko_projects/tests/LoginDropbox.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/sutsko_projects/tests/LoginDrop.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/sutsko_projects/tests/LoginFF.java" />
@@ -603,27 +588,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sutsko_projects/tests/LoginTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sutsko_projects/webdriver/AuthenticatedHtmlUnitDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        <state relative-caret-position="85">
+          <caret line="5" column="52" lean-forward="true" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sutsko_projects/util/Browser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sutsko_projects/util/PropertyLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar!/org/openqa/selenium/remote/DesiredCapabilities.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar!/org/openqa/selenium/firefox/FirefoxDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59-sources.jar!/org/openqa/selenium/firefox/FirefoxDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="63" column="7" lean-forward="true" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sutsko_projects/pages/HomePageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59-sources.jar!/org/openqa/selenium/remote/DesiredCapabilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sutsko_projects/webdriver/WebDriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="73" column="64" selection-start-line="73" selection-start-column="64" selection-end-line="73" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2227">
-          <caret line="131" column="29" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="29" />
+        <state relative-caret-position="-17">
+          <caret line="110" column="32" lean-forward="true" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -634,24 +668,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sutsko_projects/webdriver/WebDriverFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2669">
-          <caret line="175" selection-start-line="175" selection-end-line="175" />
+        <state relative-caret-position="153">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sutsko_projects/pages/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        <state relative-caret-position="357">
+          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sutsko_projects/pages/HomePageTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sutsko_projects/applogic/UserHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+        <state relative-caret-position="153">
+          <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1218#1219#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1364#1365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sutsko_projects/applogic/DriverBasedHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="35" lean-forward="true" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sutsko_projects/applogic/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sutsko_projects/tests/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="23" column="68" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
