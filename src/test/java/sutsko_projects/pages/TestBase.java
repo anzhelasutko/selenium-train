@@ -15,6 +15,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 
+import sutsko_projects.applogic.ApplicationManager;
 import sutsko_projects.util.PropertyLoader;
 import sutsko_projects.util.Browser;
 import sutsko_projects.webdriver.WebDriverFactory;
@@ -37,22 +38,11 @@ public class TestBase {
 
 	protected Browser browser;
 
+	protected ApplicationManager app;
+
 	@BeforeClass
 	public void init() {
-		websiteUrl = PropertyLoader.loadProperty("site.url");
-		gridHubUrl = PropertyLoader.loadProperty("grid2.hub");
-
-		browser = new Browser();
-		browser.setName(PropertyLoader.loadProperty("browser.name"));
-		browser.setVersion(PropertyLoader.loadProperty("browser.version"));
-		browser.setPlatform(PropertyLoader.loadProperty("browser.platform"));
-
-		String username = PropertyLoader.loadProperty("user.username");
-		String password = PropertyLoader.loadProperty("user.password");
-		
-		webDriver = WebDriverFactory.getInstance(gridHubUrl, browser, username,
-				password);
-		webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		app = new ApplicationManager();
 	}
 
 	@AfterSuite(alwaysRun = true)
