@@ -3,7 +3,6 @@ package sutsko_projects.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class LoginPage extends AnyPage{
@@ -11,14 +10,17 @@ public class LoginPage extends AnyPage{
         super(pages);
     }
 
-    @FindBy(name = "username")
+    @FindBy(name = "login")
     private WebElement usernameField;
 
     @FindBy(name = "password")
     private WebElement passwordField;
 
-    @FindBy(name = "submit")
+    @FindBy(name = "commit")
     private WebElement submitButton;
+
+    @FindBy(xpath="//*[@href='/login']")
+    private WebElement loginLink;
 
     public LoginPage setUsernameField(String text) {
         usernameField.sendKeys(text);
@@ -36,8 +38,12 @@ public class LoginPage extends AnyPage{
 
     public LoginPage ensurePageLoaded() {
         super.ensurePageLoaded();
-        wait.until(presenceOfElementLocated(By.xpath("//*[@href='/login']")));
+        wait.until(presenceOfElementLocated(By.name("login")));
         return this;
+    }
+
+    public void clickLoginLink() {
+        loginLink.click();
     }
 
 }

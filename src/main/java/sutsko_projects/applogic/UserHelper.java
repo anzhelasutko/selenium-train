@@ -19,15 +19,6 @@ public class UserHelper extends DriverBasedHelper {
                     .setUsernameField(user.getLogin())
                     .setPasswordField(user.getPassword())
                     .clickSubmitButton();
-
-//        driver.findElement(By.linkText("login"))
-//                .click();
-//        driver.findElement(By.id("login_field"))
-//                .sendKeys(user.getLogin());
-//        driver.findElement(By.id("password"))
-//                .sendKeys(user.getPassword());
-//        driver.findElement(By.name("commit"))
-//                .click();
         }
 
 //        public void logout() {
@@ -46,6 +37,10 @@ public class UserHelper extends DriverBasedHelper {
         public boolean isNotLoggedIn() {
 
             return pages.loginPage.waitPageLoaded();
+        }
+
+        public void clickLoginLink() {
+            pages.loginPage.clickLoginLink();
         }
 
     }

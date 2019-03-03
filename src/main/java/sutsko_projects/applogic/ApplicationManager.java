@@ -1,8 +1,6 @@
 package sutsko_projects.applogic;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterSuite;
-import sutsko_projects.applogic.UserHelper;
 import sutsko_projects.util.Browser;
 import sutsko_projects.util.PropertyLoader;
 import sutsko_projects.webdriver.WebDriverFactory;
@@ -13,8 +11,8 @@ public class ApplicationManager {
 
     private UserHelper userHelper;
 
-    public WebDriver webDriver;
-    public String websiteUrl;
+    private WebDriver webDriver;
+    private String websiteUrl;
 
     public ApplicationManager() {
         websiteUrl = PropertyLoader.loadProperty("site.url");
@@ -33,7 +31,6 @@ public class ApplicationManager {
         webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
         userHelper = new UserHelper(this);
-        getWebsiteUrl();
         //navHelper = new NavigationHelper1(this);
 
         //getNavigationHelper1().openMainPage();
@@ -54,19 +51,11 @@ public class ApplicationManager {
         }
     }
 
-    @AfterSuite(alwaysRun = true)
-    public void tearDown() {
-        if (webDriver != null) {
-            webDriver.quit();
-        }
-    }
-
     public WebDriver getWebDriver() {
         return webDriver;
     }
 
     public String getWebsiteUrl() {
-
         return websiteUrl;
     }
 }

@@ -1,17 +1,10 @@
 package sutsko_projects.model;
 
 public class User {
-    private String id;
     private String email;
     private String login;
     private String password;
-    public String getId() {
-        return id;
-    }
-    public User setId(String id) {
-        this.id = id;
-        return this;
-    }
+
     public String getLogin() {
         return login;
     }
