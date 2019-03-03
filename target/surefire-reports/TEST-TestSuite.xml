@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="8.53" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="0.001" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="idea.version" value="2018.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -60,5 +60,23 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="LoginTest" classname="sutsko_projects.tests.LoginTest" time="8.53"/>
+  <testcase name="LoginTest" classname="sutsko_projects.tests.LoginTest" time="0.001">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at sutsko_projects.tests.LoginTest.LoginTest(LoginTest.java:22)
+</failure>
+    <system-out><![CDATA[...
+... TestNG 7.0.0-beta1 by Cédric Beust (cedric@beust.com)
+...
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 11139
+Only local connections are allowed.
+Feb 24, 2019 4:24:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 8835
+Only local connections are allowed.
+Feb 24, 2019 4:24:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
 </testsuite>
