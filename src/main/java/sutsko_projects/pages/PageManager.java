@@ -10,11 +10,13 @@ public class PageManager {
 
     public LoginPage loginPage;
     public InternalPage internalPage;
+    public UserProfilePage userProfilePage;
 
     public PageManager(WebDriver driver) {
         this.driver = driver;
         loginPage = initElements(new LoginPage(this));
         internalPage = initElements(new InternalPage(this));
+        userProfilePage = initElements(new UserProfilePage(this));
 
     }
 
