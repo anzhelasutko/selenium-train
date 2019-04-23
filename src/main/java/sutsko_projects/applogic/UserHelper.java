@@ -1,7 +1,6 @@
 package sutsko_projects.applogic;
 
-import org.openqa.selenium.By;
-import sutsko_projects.applogic.ApplicationManager;
+import org.openqa.selenium.WebElement;
 import sutsko_projects.model.User;
 
 public class UserHelper extends DriverBasedHelper {
@@ -21,10 +20,6 @@ public class UserHelper extends DriverBasedHelper {
                     .clickSubmitButton();
         }
 
-//        public void logout() {
-//            pages.internalPage.ensurePageLoaded()
-//                    .clickLogoutLink();
-//        }
 
         public boolean isLoggedIn() {
             return pages.internalPage.waitPageLoaded();
@@ -42,5 +37,52 @@ public class UserHelper extends DriverBasedHelper {
         public void clickLoginLink() {
             pages.loginPage.clickLoginLink();
         }
+
+        public void clickNewRepositoryButton() {pages.internalPage.clickNewRepositoryButton();}
+
+        public void focusOnRepositoryNameTextField() {
+            pages.internalPage.focusOnRepositoryNameTextField();
+        }
+
+        public UserHelper setRepositoryName(String text) {
+            pages.internalPage.setRepositoryName(text);
+            return this;
+        }
+
+        public void clickCreateRepositoryButton() {
+            pages.internalPage.clickCreateRepositoryButton();
+        }
+
+        public WebElement repositoryName = pages.internalPage.repositoryName;
+
+        public void ensurePageLoaded() {
+            pages.internalPage.ensurePageLoaded();
+        }
+
+        public void clickViewProfileAndMoreMenu() {
+            pages.userProfilePage.clickViewProfileAndMoreMenu();
+        }
+
+        public void clickYourProfileDDItem() {
+            pages.userProfilePage.clickYourProfileDDItem();
+        }
+
+        public void clickEditProfileButton() {
+            pages.userProfilePage.clickEditProfileButton();
+        }
+
+        public void clearUserBioField() {
+            pages.userProfilePage.clearUserBioField();
+        }
+
+        public void clickUserProfileSaveButton() {
+            pages.userProfilePage.clickUserProfileSaveButton();
+        }
+        public UserHelper enterUserBio(String text) {
+            pages.userProfilePage.enterUserBio(text);
+            return this;
+        }
+
+        public WebElement userBioText = pages.userProfilePage.userBioText;
 
     }
